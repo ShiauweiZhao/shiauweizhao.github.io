@@ -11,6 +11,7 @@ date: 2022/08/29
 # strip工具使用和测试
 strip工具使用需要在相关嵌入式平台直接使用，不支持跨平台使用类似交叉编译的方法使用。
 ## strip测试
+```
     strip libprotobuf.so.22.0.2 -o proto.so
     ls -la
     total 36796
@@ -20,3 +21,4 @@ strip工具使用需要在相关嵌入式平台直接使用，不支持跨平台
     lrwxrwxrwx 1 xiaowei xiaowei       21 Aug 27 11:05 libprotobuf.so.22 -> libprotobuf.so.22.0.2
     -rwxr-xr-x 1 xiaowei xiaowei 34881528 Aug 27 11:05 libprotobuf.so.22.0.2
     -rwxr-xr-x 1 xiaowei xiaowei  2789040 Oct  9 18:13 proto.so
+```
