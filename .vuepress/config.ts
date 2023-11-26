@@ -18,6 +18,14 @@ export default defineUserConfig({
     //   categoryText: '分类', // 默认 categories
     //   tagText: 'tags' // 默认 tags
     },
+    commentConfig: {
+      type: 'valine',
+      options: {
+        appId: 'GbBA2nicnjVSgHGUL7l4JkNa-gzGzoHsz', // your appId
+        appKey: 'gNTIPdOr27HRxOn9LQvaBLzn', // your appKey
+        hideComments: false, // 全局隐藏评论，默认 false
+      },
+    },
     // series 为原 sidebar
     series: {
       // "/docs/theme-reco/": [
