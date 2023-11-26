@@ -25,5 +25,4 @@ github这里 你需要注册一个github账号，然后去fork PX4-Autopilot的�
 使用```git checkout -b``` 创建分支,分支名建议叫做pr-xxxx添加自己的修改内容,使用```git status```查看修改内容，随后使用 ``` git add git commit git push```指令将分支推送到远端仓库。
 # 提交pr
 打开自己fork的PX4仓库 
-![1](https://github.com/ShiauweiZhao/shiauweizhao.github.io/raw/master/images/pr-2-px4.jpg)
 点击 compare & pull request 创建自己的pr，内容和标题应该尽可能表明具体功能，必要时可以上传视频，日志等。
