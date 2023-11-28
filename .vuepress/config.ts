@@ -21,8 +21,8 @@ export default defineUserConfig({
     commentConfig: {
       type: 'valine',
       options: {
-        appId: 'GbBA2nicnjVSgHGUL7l4JkNa-gzGzoHsz', // your appId
-        appKey: 'gNTIPdOr27HRxOn9LQvaBLzn', // your appKey
+        appId: 'IEh5yy6yv8VGiIqS4gWgqRU9-gzGzoHsz', // your appId
+        appKey: 'ZkjJ7Sr1TXTigEtvNLzcBcXj', // your appKey
         hideComments: false, // 全局隐藏评论，默认 false
       },
     },
