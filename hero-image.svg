@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" fill="none">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00f5d4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#7b61ff;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="grad2" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#7b61ff;stop-opacity:0.5" />
+      <stop offset="100%" style="stop-color:#00f5d4;stop-opacity:0.5" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- 背景网格 -->
+  <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+    <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#00f5d4" stroke-width="0.3" opacity="0.2"/>
+  </pattern>
+  <rect width="400" height="300" fill="url(#grid)"/>
+
+  <!-- 主框架 -->
+  <rect x="50" y="40" width="300" height="180" rx="10" stroke="url(#grad1)" stroke-width="2" fill="#0a0e14" opacity="0.9"/>
+
+  <!-- 窗口控制按钮 -->
+  <circle cx="70" cy="55" r="5" fill="#ff6b6b"/>
+  <circle cx="90" cy="55" r="5" fill="#ffd93d"/>
+  <circle cx="110" cy="55" r="5" fill="#3fb950"/>
+
+  <!-- 代码行 -->
+  <rect x="70" y="80" width="100" height="4" rx="2" fill="#00f5d4" opacity="0.8"/>
+  <rect x="70" y="95" width="150" height="4" rx="2" fill="#7b61ff" opacity="0.6"/>
+  <rect x="70" y="110" width="80" height="4" rx="2" fill="#00f5d4" opacity="0.5"/>
+  <rect x="70" y="125" width="180" height="4" rx="2" fill="#8b949e" opacity="0.4"/>
+  <rect x="70" y="140" width="120" height="4" rx="2" fill="#7b61ff" opacity="0.6"/>
+  <rect x="70" y="155" width="200" height="4" rx="2" fill="#00f5d4" opacity="0.4"/>
+  <rect x="70" y="170" width="90" height="4" rx="2" fill="#8b949e" opacity="0.3"/>
+  <rect x="70" y="185" width="160" height="4" rx="2" fill="#7b61ff" opacity="0.5"/>
+
+  <!-- 终端提示符 -->
+  <text x="70" y="210" font-family="monospace" font-size="12" fill="#00f5d4">$</text>
+  <rect x="85" y="200" width="60" height="12" rx="2" fill="#00f5d4" opacity="0.3">
+    <animate attributeName="opacity" values="0.3;0.6;0.3" dur="1.5s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- 装饰圆环 -->
+  <circle cx="350" cy="80" r="25" stroke="url(#grad1)" stroke-width="1.5" fill="none" opacity="0.5" filter="url(#glow)"/>
+  <circle cx="350" cy="80" r="18" stroke="#00f5d4" stroke-width="1" fill="none" opacity="0.3"/>
+
+  <!-- 装饰点 -->
+  <circle cx="60" cy="250" r="4" fill="#00f5d4" filter="url(#glow)">
+    <animate attributeName="opacity" values="1;0.5;1" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="340" cy="260" r="3" fill="#7b61ff" filter="url(#glow)">
+    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="200" cy="270" r="2" fill="#00f5d4" opacity="0.6"/>
+
+  <!-- 连接线 -->
+  <path d="M60 250 Q 130 240 200 270" stroke="url(#grad2)" stroke-width="1" fill="none" stroke-dasharray="4 4">
+    <animate attributeName="stroke-dashoffset" values="0;8" dur="1s" repeatCount="indefinite"/>
+  </path>
+  <path d="M200 270 Q 270 250 340 260" stroke="url(#grad2)" stroke-width="1" fill="none" stroke-dasharray="4 4">
+    <animate attributeName="stroke-dashoffset" values="0;8" dur="1s" repeatCount="indefinite"/>
+  </path>
+
+  <!-- 浮动元素 -->
+  <g opacity="0.6">
+    <rect x="30" y="100" width="15" height="15" rx="3" stroke="#00f5d4" stroke-width="1" fill="none">
+      <animateTransform attributeName="transform" type="translate" values="0,0; 0,-10; 0,0" dur="3s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <g opacity="0.4">
+    <polygon points="370,150 380,165 360,165" stroke="#7b61ff" stroke-width="1" fill="none">
+      <animateTransform attributeName="transform" type="translate" values="0,0; 0,8; 0,0" dur="4s" repeatCount="indefinite"/>
+    </polygon>
+  </g>
+</svg>

@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none">
+  <defs>
+    <linearGradient id="uav-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00f5d4"/>
+      <stop offset="100%" style="stop-color:#7b61ff"/>
+    </linearGradient>
+  </defs>
+  <!-- 机身中心 -->
+  <circle cx="24" cy="24" r="6" fill="url(#uav-grad)"/>
+  <!-- 机臂 -->
+  <line x1="24" y1="24" x2="8" y2="8" stroke="url(#uav-grad)" stroke-width="3" stroke-linecap="round"/>
+  <line x1="24" y1="24" x2="40" y2="8" stroke="url(#uav-grad)" stroke-width="3" stroke-linecap="round"/>
+  <line x1="24" y1="24" x2="8" y2="40" stroke="url(#uav-grad)" stroke-width="3" stroke-linecap="round"/>
+  <line x1="24" y1="24" x2="40" y2="40" stroke="url(#uav-grad)" stroke-width="3" stroke-linecap="round"/>
+  <!-- 螺旋桨 -->
+  <circle cx="8" cy="8" r="5" stroke="url(#uav-grad)" stroke-width="2" fill="none" opacity="0.8"/>
+  <circle cx="40" cy="8" r="5" stroke="url(#uav-grad)" stroke-width="2" fill="none" opacity="0.8"/>
+  <circle cx="8" cy="40" r="5" stroke="url(#uav-grad)" stroke-width="2" fill="none" opacity="0.8"/>
+  <circle cx="40" cy="40" r="5" stroke="url(#uav-grad)" stroke-width="2" fill="none" opacity="0.8"/>
+  <!-- 电机 -->
+  <circle cx="8" cy="8" r="2" fill="url(#uav-grad)"/>
+  <circle cx="40" cy="8" r="2" fill="url(#uav-grad)"/>
+  <circle cx="8" cy="40" r="2" fill="url(#uav-grad)"/>
+  <circle cx="40" cy="40" r="2" fill="url(#uav-grad)"/>
+  <!-- 指示灯 -->
+  <circle cx="24" cy="24" r="2" fill="#00f5d4">
+    <animate attributeName="opacity" values="1;0.3;1" dur="1.5s" repeatCount="indefinite"/>
+  </circle>
+</svg>
